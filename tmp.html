@@ -2,14 +2,37 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+  <meta charset="UTF-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#alert").hide();
+	$("#but").click(function(){
+		$("#alert").show();
+		$("#but").hide();
+	});
+});
+</script>
 </head>
 <body>
-<!-- Columns are always 50% wide, on mobile and desktop -->
-<div class="row">
-  <div class="col-sm-6">.col-xs-6</div>
-  <div class="col-sm-6"><button type="button" class="btn btn-primary">Primary</button></div>
+
+<div class="jumbotron">
+<p>
+【先複製這个消息】，【打开手机里的zhi付宝】，就能找到我，你们懂的！aBV5jk68ox
+</p>
+<p class="text-center">
+<button id="but" type="button" class="btn btn-primary btn-lg">复制文字	 (๑¯ิε ¯ิ๑)</button>
+</p>
+
+<div id="alert">
+<div class="alert alert-success" role="alert">
+<a href="#" class="alert-link">复制好了！打开支付宝 APP 就能加我好友！</a>
+</div>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
+</div>
+
 </div>
 
 </body>
