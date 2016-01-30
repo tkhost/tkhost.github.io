@@ -17,15 +17,17 @@ function copyToClipboard(element) {
 
 $(document).ready(function(){
 	$("#alert").hide();
+	var lock = false;
 
 	setInterval(
 		function(){
-			if (!$.trim($("#mycopy").val())) {
+			if (!lock && !$.trim($("#mycopy").val())) {
 				$("#alert").show();
-				$("#but").hide();
+				// $("#but").hide();
+				lock = true;
 			}
 		},
-		1000  /* 1 sec */
+		500  /* 0.5 sec */
 	);
 //	$("#but").click(function(){
 //		copyToClipboard('#mycopy');
@@ -34,9 +36,11 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-
+<p class="text-center">
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face139.gif"/>
+</p>
 <div class="jumbotron">
-<p class="text-center">求剪切下面的全部文字 (๑¯ิ ε ¯ิ๑)</p>
+<p class="text-center">求全选、剪切下面的<b>全部</b>内容 (๑¯ิ ε ¯ิ๑)</p>
 <p><textarea id="mycopy" style="width:100%;">
 【先複製這个消息】，【打开手机里的zhi付宝】，就能找到我，你们懂的！aBV5jk68ox
 </textarea></p>
@@ -48,7 +52,8 @@ $(document).ready(function(){
 
 <div id="alert">
 <div class="alert alert-success" role="alert">
-<a href="#" class="alert-link">剪切好了？打开支付宝 APP 就能在支付宝里加钟威好友！</a>
+<a href="#" class="alert-link">剪切好了？现在打开最新版支付宝就能加我！</a>
+(为了瓜分两个亿专门做个网页我也是拼了……)
 </div>
 <img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
 <img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
@@ -74,12 +79,14 @@ $(document).ready(function(){
 <img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
 <img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
 <img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face139.gif"/>
 <br/>
-(记得打开支付宝哦亲！)
+<blockquote>
+<p>
+到底了亲！
+快打开支付宝APP 吧！么么哒～
+</p>
+</blockquote>
 </div>
-
 </div>
-
 </body>
 </html>
