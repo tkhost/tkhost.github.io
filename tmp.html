@@ -17,87 +17,65 @@ function copyToClipboard(element) {
 
 $(document).ready(function(){
 	$("#alert").hide();
-	$("#but").click(function(){
-		copyToClipboard('#mycopy');
-		$("#alert").show();
-		$("#but").hide();
-	});
+
+	setInterval(
+		function(){
+			if (!$.trim($("#mycopy").val())) {
+				$("#alert").show();
+				$("#but").hide();
+			}
+		},
+		1000  /* 1 sec */
+	);
+//	$("#but").click(function(){
+//		copyToClipboard('#mycopy');
+//	});
 });
 </script>
 </head>
 <body>
 
 <div class="jumbotron">
-<p id="mycopy">
+<p class="text-center">求剪切下面的全部文字 (๑¯ิ ε ¯ิ๑)</p>
+<p><textarea id="mycopy" style="width:100%;">
 【先複製這个消息】，【打开手机里的zhi付宝】，就能找到我，你们懂的！aBV5jk68ox
-</p>
+</textarea></p>
+<!--
 <p class="text-center">
 <button id="but" type="button" class="btn btn-primary btn-lg">复制文字	 (๑¯ิε ¯ิ๑)</button>
 </p>
+-->
 
 <div id="alert">
 <div class="alert alert-success" role="alert">
-<a href="#" class="alert-link">复制好了！打开支付宝 APP 就能在支付宝里加钟威好友！</a>
+<a href="#" class="alert-link">剪切好了？打开支付宝 APP 就能在支付宝里加钟威好友！</a>
 </div>
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif">
-<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face139.gif">
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face161.gif"/>
+<img src="http://104.131.253.240/tkblog/resource/leave_comment/faces/face139.gif"/>
+<br/>
 (记得打开支付宝哦亲！)
 </div>
 
